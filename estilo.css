@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    }
+
+body {
+    font-family: 'ABeeZee', sans-serif;
+    }
+
+.hero, .projects, .feedback {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    font-weight: 100;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    }
+
+.hero {
+    background: url('img/header.jpg') no-repeat center center/cover;
+    color: black;
+    flex-direction: column;
+    }
+
+.hero h1 {
+    font-size: 4em;
+}
+
+.hero p {
+    font-size: 2em;
+}
+
+.pro {
+    margin-bottom: 4em;
+}
+        
+.projects {
+    background: white;
+    flex-direction: column;
+        }
+
+.github-img {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 80px;
+    justify-content: center;
+    align-items: center;
+        }
+        
+.github-img img {
+    width: 100%;
+    height: 250px;
+        }
+
+
+.fee {
+    background-color: #4db6ac;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 1em;
+    font-weight: 100;
+        }
+
+main {
+    margin-left: 5%;
+        }
+
+.first {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+        }
+
+.text, .map {
+    width: 50%;
+        }
+        
+        
+.text h1 {
+    color: #333;
+    margin-left: 50px;
+        }
+
+.text p, .text ul { /*para el contenido dentro de los encabezados*/
+    color: #555;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-left: 50px;
+}
+
+.text ul { /*para dejar espacio entre el contenido del segundo encabezado*/
+    line-height: 2;
+}
+
+.text ul {
+    list-style: none; /*para no tener los puntos de la lista*/
+}
+
+.map iframe {
+    width: 100%;
+    height: 250px;
+    border: none;
+}
+
+.last {
+    text-align: center;
+    padding: 1%;
+    background-color: black;
+    color: white;
+}
+
+.links {
+    background: #939393cc;
+    color: white;
+    text-align: left;
+    line-height: 2;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 40px;
+}
+
+.links h4 {
+    color: black;
+}
+
+
+@media (max-width: 768px) {
+
+.hero, .projects, .feedback {
+        width: 100vw;
+        height: 100vh;
+        }
+
+.hero, .projects, {
+    gap: 80px;
+}
+
+.github-img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px;
+    justify-content: center;
+    align-items: center;
+}
+
+}
+
