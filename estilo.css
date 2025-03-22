@@ -18,7 +18,7 @@ body {
     }
 
 .hero {
-    background: url('img/header.jpg') no-repeat center center/cover;
+    background: url('img/header.jpg') no-repeat center/cover;
     color: black;
     flex-direction: column;
     }
@@ -69,7 +69,8 @@ main {
 
 .first {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: flex-start;
     padding: 40px;
         }
 
@@ -90,12 +91,13 @@ main {
     margin-left: 50px;
 }
 
-.text ul { /*para dejar espacio entre el contenido del segundo encabezado*/
-    line-height: 2;
-}
-
 .text ul {
     list-style: none; /*para no tener los puntos de la lista*/
+    line-height: 2; /*para dejar espacio entre el contenido del segundo encabezado*/
+}
+
+.map {
+    width: 40%;
 }
 
 .map iframe {
@@ -128,21 +130,30 @@ main {
 
 @media (max-width: 768px) {
 
-.hero, .projects, .feedback {
-        width: 100vw;
-        height: 100vh;
-        }
+.github-img img {
+        width: 100%;
+        height: 110px;
+            }
 
-.hero, .projects, {
-    gap: 80px;
+.first {
+    flex-direction: column;
+}
+
+.text, .map {
+    width: 100%;
 }
 
 .github-img {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 80px;
-    justify-content: center;
-    align-items: center;
+}
+
+.links {
+    flex-direction: column;
+}
+
+.hello, .lol {
+    flex-direction: row;
 }
 
 }
