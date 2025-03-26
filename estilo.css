@@ -4,7 +4,9 @@
     }
 
 body {
-    font-family: 'ABeeZee', sans-serif;
+    font-family: 'Comfortaa', sans-serif;
+    background: url('img/header.jpg') no-repeat center/cover; /*la imagen de fondo*/
+    height: 100vh; /*esto es para que la imagen de fondo solo ocupe al 100*/
     }
 
 .hero, .projects, .feedback {
@@ -18,7 +20,6 @@ body {
     }
 
 .hero {
-    background: url('img/header.jpg') no-repeat center/cover;
     color: black;
     flex-direction: column;
     }
@@ -28,7 +29,7 @@ body {
 }
 
 .hero p {
-    font-size: 2em;
+    font-size: 2.5em;
 }
 
 .pro {
@@ -43,7 +44,7 @@ body {
 .github-img {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 80px;
+    gap: 90px;
     justify-content: center;
     align-items: center;
         }
@@ -53,7 +54,6 @@ body {
     height: 250px;
         }
 
-
 .fee {
     background-color: #4db6ac;
     color: white;
@@ -61,10 +61,6 @@ body {
     padding: 20px;
     font-size: 1em;
     font-weight: 100;
-        }
-
-main {
-    margin-left: 5%;
         }
 
 .first {
@@ -81,14 +77,14 @@ main {
         
 .text h1 {
     color: #333;
-    margin-left: 50px;
+    margin-left: 0;
         }
 
 .text p, .text ul { /*para el contenido dentro de los encabezados*/
     color: #555;
     font-size: 16px;
     line-height: 1.5;
-    margin-left: 50px;
+    margin-left: 0;
 }
 
 .text ul {
@@ -128,15 +124,23 @@ main {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
 
 .github-img img {
         width: 100%;
-        height: 110px;
+        height: 130px;
             }
 
 .first {
     flex-direction: column;
+}
+
+.pro { /*esto es para el encabezado PROYECTOS*/
+    margin-bottom: 1em;
+}
+
+.fee > p { 
+    font-size: 22px;
 }
 
 .text, .map {
@@ -150,11 +154,10 @@ main {
 
 .links {
     flex-direction: column;
-}
+    padding: 5px 20px;
+    }
 
 .hello, .lol {
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
-
-}
-
